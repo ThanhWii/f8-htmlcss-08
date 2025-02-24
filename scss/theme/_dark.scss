@@ -16,6 +16,10 @@ html.dark {
     --top-act-group-seperate: #EDEDF6;
     --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(6911%) hue-rotate(8deg) brightness(112%) contrast(97%);
 
+    // Side bar
+    --sidebar-bg: #292E39;
+    --sidebar-shadow: rgba(23, 28, 40, 0.40);
+
     @include abstracts.breakpoint(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     };
