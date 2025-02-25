@@ -20,7 +20,7 @@ html.dark {
     --sidebar-bg: #292E39;
     --sidebar-shadow: rgba(23, 28, 40, 0.40);
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     };
 }
