@@ -42,12 +42,12 @@
 
     &__number {
         color: var(--color);
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
 
         @include abstracts.screen(md) {
-            font-size: 14px;
+            font-size: 1.4rem;
             line-height: 142.857%;
         }
     }
