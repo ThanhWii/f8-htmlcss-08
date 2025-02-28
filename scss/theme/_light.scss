@@ -33,6 +33,11 @@ html {
     --product-card-bg: #fff;
     --product-card-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.20);
 
+    // Filter Form
+    --filter-form-bg: #fff;
+    --filter-form-shadow: 0px 40px 90px rgba(200, 200, 200, 0.40);
+    --filter-form-tag-bg: #F8F8FB;
+
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);

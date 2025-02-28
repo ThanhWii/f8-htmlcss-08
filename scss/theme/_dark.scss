@@ -33,6 +33,12 @@ html.dark {
     --product-card-bg: #171C28;
     --product-card-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.20);
 
+    // Filter Form
+    --filter-form-bg: #292E39;
+    --filter-form-shadow: 0px 40px 90px rgba(0, 0, 0, 0.40);
+    --filter-form-tag-bg: #171C28;
+    --filter-form-arrow: var(--dropdown-arrow-color);
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     };
