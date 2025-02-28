@@ -1,4 +1,7 @@
 .product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 16px;
     border-radius: 20px;
     background: var(--product-card-bg);
@@ -42,12 +45,11 @@
         align-items: center;
         font-weight: 500;
         line-height: 150%;
+        margin-top: auto;
     }
 
     &__star {
         margin-left: auto;
         margin-right: 6px;
     }
-
-
 }
