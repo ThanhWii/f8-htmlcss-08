@@ -104,7 +104,7 @@ $gutters: (
             --grid-gutter-x: #{$grid-gutter-width * $ratio};
         }
 
-        .g#{$infix}-#{$i}
+        .g#{$infix}-#{$i},
         .gy#{$infix}-#{$i} {
             --grid-gutter-y: #{$grid-gutter-width * $ratio};
         }

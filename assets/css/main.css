@@ -72,6 +72,8 @@ button {
   border: none;
   outline: none;
   background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
 button, input, textarea, select, img {
@@ -82,6 +84,13 @@ button, input, textarea, select, img {
 
 .icon {
   filter: var(--icon-color);
+}
+
+@media (max-width: 574.98px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 .row > *, .container-fluid, .container {
@@ -259,7 +268,8 @@ button, input, textarea, select, img {
   --grid-gutter-x: 0px;
 }
 
-.g-0 .gy-0 {
+.g-0,
+.gy-0 {
   --grid-gutter-y: 0px;
 }
 
@@ -268,7 +278,8 @@ button, input, textarea, select, img {
   --grid-gutter-x: 7.5px;
 }
 
-.g-1 .gy-1 {
+.g-1,
+.gy-1 {
   --grid-gutter-y: 7.5px;
 }
 
@@ -277,7 +288,8 @@ button, input, textarea, select, img {
   --grid-gutter-x: 15px;
 }
 
-.g-2 .gy-2 {
+.g-2,
+.gy-2 {
   --grid-gutter-y: 15px;
 }
 
@@ -286,7 +298,8 @@ button, input, textarea, select, img {
   --grid-gutter-x: 30px;
 }
 
-.g-3 .gy-3 {
+.g-3,
+.gy-3 {
   --grid-gutter-y: 30px;
 }
 
@@ -295,7 +308,8 @@ button, input, textarea, select, img {
   --grid-gutter-x: 45px;
 }
 
-.g-4 .gy-4 {
+.g-4,
+.gy-4 {
   --grid-gutter-y: 45px;
 }
 
@@ -304,7 +318,8 @@ button, input, textarea, select, img {
   --grid-gutter-x: 90px;
 }
 
-.g-5 .gy-5 {
+.g-5,
+.gy-5 {
   --grid-gutter-y: 90px;
 }
 
@@ -424,42 +439,48 @@ button, input, textarea, select, img {
   .gx-xxl-0 {
     --grid-gutter-x: 0px;
   }
-  .g-xxl-0 .gy-xxl-0 {
+  .g-xxl-0,
+  .gy-xxl-0 {
     --grid-gutter-y: 0px;
   }
   .g-xxl-1,
   .gx-xxl-1 {
     --grid-gutter-x: 7.5px;
   }
-  .g-xxl-1 .gy-xxl-1 {
+  .g-xxl-1,
+  .gy-xxl-1 {
     --grid-gutter-y: 7.5px;
   }
   .g-xxl-2,
   .gx-xxl-2 {
     --grid-gutter-x: 15px;
   }
-  .g-xxl-2 .gy-xxl-2 {
+  .g-xxl-2,
+  .gy-xxl-2 {
     --grid-gutter-y: 15px;
   }
   .g-xxl-3,
   .gx-xxl-3 {
     --grid-gutter-x: 30px;
   }
-  .g-xxl-3 .gy-xxl-3 {
+  .g-xxl-3,
+  .gy-xxl-3 {
     --grid-gutter-y: 30px;
   }
   .g-xxl-4,
   .gx-xxl-4 {
     --grid-gutter-x: 45px;
   }
-  .g-xxl-4 .gy-xxl-4 {
+  .g-xxl-4,
+  .gy-xxl-4 {
     --grid-gutter-y: 45px;
   }
   .g-xxl-5,
   .gx-xxl-5 {
     --grid-gutter-x: 90px;
   }
-  .g-xxl-5 .gy-xxl-5 {
+  .g-xxl-5,
+  .gy-xxl-5 {
     --grid-gutter-y: 90px;
   }
 }
@@ -579,42 +600,48 @@ button, input, textarea, select, img {
   .gx-xl-0 {
     --grid-gutter-x: 0px;
   }
-  .g-xl-0 .gy-xl-0 {
+  .g-xl-0,
+  .gy-xl-0 {
     --grid-gutter-y: 0px;
   }
   .g-xl-1,
   .gx-xl-1 {
     --grid-gutter-x: 7.5px;
   }
-  .g-xl-1 .gy-xl-1 {
+  .g-xl-1,
+  .gy-xl-1 {
     --grid-gutter-y: 7.5px;
   }
   .g-xl-2,
   .gx-xl-2 {
     --grid-gutter-x: 15px;
   }
-  .g-xl-2 .gy-xl-2 {
+  .g-xl-2,
+  .gy-xl-2 {
     --grid-gutter-y: 15px;
   }
   .g-xl-3,
   .gx-xl-3 {
     --grid-gutter-x: 30px;
   }
-  .g-xl-3 .gy-xl-3 {
+  .g-xl-3,
+  .gy-xl-3 {
     --grid-gutter-y: 30px;
   }
   .g-xl-4,
   .gx-xl-4 {
     --grid-gutter-x: 45px;
   }
-  .g-xl-4 .gy-xl-4 {
+  .g-xl-4,
+  .gy-xl-4 {
     --grid-gutter-y: 45px;
   }
   .g-xl-5,
   .gx-xl-5 {
     --grid-gutter-x: 90px;
   }
-  .g-xl-5 .gy-xl-5 {
+  .g-xl-5,
+  .gy-xl-5 {
     --grid-gutter-y: 90px;
   }
 }
@@ -734,42 +761,48 @@ button, input, textarea, select, img {
   .gx-lg-0 {
     --grid-gutter-x: 0px;
   }
-  .g-lg-0 .gy-lg-0 {
+  .g-lg-0,
+  .gy-lg-0 {
     --grid-gutter-y: 0px;
   }
   .g-lg-1,
   .gx-lg-1 {
     --grid-gutter-x: 7.5px;
   }
-  .g-lg-1 .gy-lg-1 {
+  .g-lg-1,
+  .gy-lg-1 {
     --grid-gutter-y: 7.5px;
   }
   .g-lg-2,
   .gx-lg-2 {
     --grid-gutter-x: 15px;
   }
-  .g-lg-2 .gy-lg-2 {
+  .g-lg-2,
+  .gy-lg-2 {
     --grid-gutter-y: 15px;
   }
   .g-lg-3,
   .gx-lg-3 {
     --grid-gutter-x: 30px;
   }
-  .g-lg-3 .gy-lg-3 {
+  .g-lg-3,
+  .gy-lg-3 {
     --grid-gutter-y: 30px;
   }
   .g-lg-4,
   .gx-lg-4 {
     --grid-gutter-x: 45px;
   }
-  .g-lg-4 .gy-lg-4 {
+  .g-lg-4,
+  .gy-lg-4 {
     --grid-gutter-y: 45px;
   }
   .g-lg-5,
   .gx-lg-5 {
     --grid-gutter-x: 90px;
   }
-  .g-lg-5 .gy-lg-5 {
+  .g-lg-5,
+  .gy-lg-5 {
     --grid-gutter-y: 90px;
   }
 }
@@ -889,42 +922,48 @@ button, input, textarea, select, img {
   .gx-md-0 {
     --grid-gutter-x: 0px;
   }
-  .g-md-0 .gy-md-0 {
+  .g-md-0,
+  .gy-md-0 {
     --grid-gutter-y: 0px;
   }
   .g-md-1,
   .gx-md-1 {
     --grid-gutter-x: 7.5px;
   }
-  .g-md-1 .gy-md-1 {
+  .g-md-1,
+  .gy-md-1 {
     --grid-gutter-y: 7.5px;
   }
   .g-md-2,
   .gx-md-2 {
     --grid-gutter-x: 15px;
   }
-  .g-md-2 .gy-md-2 {
+  .g-md-2,
+  .gy-md-2 {
     --grid-gutter-y: 15px;
   }
   .g-md-3,
   .gx-md-3 {
     --grid-gutter-x: 30px;
   }
-  .g-md-3 .gy-md-3 {
+  .g-md-3,
+  .gy-md-3 {
     --grid-gutter-y: 30px;
   }
   .g-md-4,
   .gx-md-4 {
     --grid-gutter-x: 45px;
   }
-  .g-md-4 .gy-md-4 {
+  .g-md-4,
+  .gy-md-4 {
     --grid-gutter-y: 45px;
   }
   .g-md-5,
   .gx-md-5 {
     --grid-gutter-x: 90px;
   }
-  .g-md-5 .gy-md-5 {
+  .g-md-5,
+  .gy-md-5 {
     --grid-gutter-y: 90px;
   }
 }
@@ -1044,42 +1083,48 @@ button, input, textarea, select, img {
   .gx-sm-0 {
     --grid-gutter-x: 0px;
   }
-  .g-sm-0 .gy-sm-0 {
+  .g-sm-0,
+  .gy-sm-0 {
     --grid-gutter-y: 0px;
   }
   .g-sm-1,
   .gx-sm-1 {
     --grid-gutter-x: 7.5px;
   }
-  .g-sm-1 .gy-sm-1 {
+  .g-sm-1,
+  .gy-sm-1 {
     --grid-gutter-y: 7.5px;
   }
   .g-sm-2,
   .gx-sm-2 {
     --grid-gutter-x: 15px;
   }
-  .g-sm-2 .gy-sm-2 {
+  .g-sm-2,
+  .gy-sm-2 {
     --grid-gutter-y: 15px;
   }
   .g-sm-3,
   .gx-sm-3 {
     --grid-gutter-x: 30px;
   }
-  .g-sm-3 .gy-sm-3 {
+  .g-sm-3,
+  .gy-sm-3 {
     --grid-gutter-y: 30px;
   }
   .g-sm-4,
   .gx-sm-4 {
     --grid-gutter-x: 45px;
   }
-  .g-sm-4 .gy-sm-4 {
+  .g-sm-4,
+  .gy-sm-4 {
     --grid-gutter-y: 45px;
   }
   .g-sm-5,
   .gx-sm-5 {
     --grid-gutter-x: 90px;
   }
-  .g-sm-5 .gy-sm-5 {
+  .g-sm-5,
+  .gy-sm-5 {
     --grid-gutter-y: 90px;
   }
 }
@@ -1186,6 +1231,10 @@ html.dark {
   --cate-item-bg: #171C28;
   --cate-item-thumb-bg: #292E39;
   --cate-item-title-color: #fff;
+  --filter-btn-color: #fff;
+  --filter-btn-bg: #171C28;
+  --product-card-bg: #171C28;
+  --product-card-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.20);
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -1214,6 +1263,11 @@ html {
   --cate-item-bg: #eee;
   --cate-item-thumb-bg: #fff;
   --cate-item-title-color: #000;
+  --filter-btn-color: #6C6C72;
+  --filter-btn-bg: #fff;
+  --like-btn-shadow: 0px 20px 60px rgba(124, 124, 124, 0.20);
+  --product-card-bg: #fff;
+  --product-card-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.20);
 }
 @media (max-width: 991.98px) {
   html {
@@ -1814,6 +1868,84 @@ html {
   }
 }
 
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 36px;
+  padding: 0 14px;
+  color: var(--filter-btn-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 142.857%;
+  border-radius: 6px;
+  background: var(--filter-btn-bg);
+}
+
+.like-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: var(--like-btn-shadow);
+}
+.like-btn:not(.like-btn--liked) .like-btn__icon--liked {
+  display: none;
+}
+.like-btn--liked .like-btn__icon {
+  display: none;
+}
+.like-btn__icon--liked {
+  margin-top: 8px;
+}
+
+.product-card {
+  padding: 16px;
+  border-radius: 20px;
+  background: var(--product-card-bg);
+  box-shadow: var(--product-card-shadow);
+}
+.product-card__img-wrap {
+  position: relative;
+  padding-top: 100%;
+}
+.product-card__thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-card__like-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.product-card__title {
+  margin-top: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.product-card__brand {
+  margin: 16px 0;
+  color: #9E9DA8;
+  font-size: 1.5rem;
+  line-height: 146.667%;
+}
+.product-card__row {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 150%;
+}
+.product-card__star {
+  margin-left: auto;
+  margin-right: 6px;
+}
+
 .home__container {
   margin-top: 40px;
 }
@@ -1823,7 +1955,6 @@ html {
   }
 }
 .home__heading {
-  margin-bottom: 20px;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
@@ -1840,6 +1971,12 @@ html {
   .home__cate {
     --grid-gutter-y: 20px;
   }
+}
+.home__row {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */
