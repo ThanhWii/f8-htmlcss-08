@@ -4,6 +4,10 @@
     min-height: 100vh;
     display: flex;
     
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
+    
     &__intro, &__content {
         flex: 1;
         padding: 0 30px;
@@ -16,6 +20,7 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+        background: var(--auth-intro-bg);
 
         &-img {
             max-width: 100%;
@@ -27,6 +32,11 @@
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 144.444%;
+            color: var(--auth-intro-text-color);
+
+            @include abstracts.screen(md) {
+                font-size: 1.5rem;
+            }
         }
 
         &-logo, &-next {
@@ -51,9 +61,12 @@
             position: fixed;
             inset: 0;
             z-index: 1;
-            translate: 100%;
             transition: translate 0.5s;
             overflow-y: auto;
+
+            &.hide {
+                translate: 100%;
+            }
             
             &.show {
                 translate: 0%;
@@ -68,6 +81,10 @@
             text-align: center;
             width: min(460px, 100%);
             margin: 0 auto;
+
+            @include abstracts.screen(md) {
+                padding: 24px 0;
+            }
         }
     }
 
@@ -76,21 +93,35 @@
         font-size: 3rem;
         font-weight: 500;
         line-height: 146.667%;
+        color: var(--auth-heading-color);
+
+        @include abstracts.screen(md) {
+            font-size: 2.2rem;
+            margin-top: 40px;
+        }
     }
 
     &__desc {
         color: #9E9DA8;
         margin-top: 10px;
-        padding: 0 30px;
+        padding: 0 20px;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
         text-align: center;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
 
     &__form {
         width: 100%;
         margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
     }
 
     &__link {
@@ -98,6 +129,10 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
     }
 
     &__btn-group {
@@ -105,10 +140,16 @@
         flex-direction: column;
         gap: 30px;
         margin-top: 50px;
+
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            gap: 20px;
+        }
     }
     
     &__btn {
         width: 100%;
+        color: var(--auth-btn-color);
     }
 
     &__text {
@@ -116,5 +157,14 @@
         color: var(--Secondary-Color-Secondary-2, #9E9DA8);
         font-size: 1.8rem;
         line-height: 144.444%;
+
+        @include abstracts.screen(sm) {
+            margin-top: 36px;
+            font-size: 1.6rem;
+        }
+
+        &-link {
+            font-size: inherit;
+        }
     }
 }
