@@ -62,6 +62,29 @@ html {
     // Text content
     --text-content-hr-bg: #ebebeb;
 
+    // Header
+    --header-act-dropdown-color: #1A162E;
+    --header-act-dropdown-bg: #fff;
+    --header-act-dropdown-shadow: rgba(200, 200, 200, 0.40);
+    --header-act-dropdown-border-color: #d2d1d6;
+
+    // Checkout
+    --checkout-breadcrumbs-bg: #fff;
+    --checkout-cart-info-bg: #fff;
+    --checkout-cart-info-shadow: rgba(237, 237, 246, 0.20);
+    --checkout-cart-info-separate-bg: #D2D1D6;
+    --checkout-cart-item-title: #1A162E;
+    --checkout-cart-item-border: #D2D1D6;
+    --checkout-cart-item-price: #9E9DA8;
+    --checkout-cart-item-total-price: #1a162e;
+    --checkout-cart-item-control-btn: #9E9DA8;
+    --checkout-cart-item-control-border: #d2d1d6;
+    --checkout-gift-shadow: rgba(237, 237, 246, 0.20);
+
+    // Dialog
+    --dialog-bg: #fff;
+    --dialog-shadow: rgba(237, 237, 246, 0.2);
+
     // Product detail
     @include abstracts.screen(md) {
         --product-detail-bg: #fafafd;

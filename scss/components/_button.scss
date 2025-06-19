@@ -49,6 +49,12 @@
     border-radius: 6px;
     background: #F8F8FB;
     user-select: none;
+    white-space: nowrap;
+
+    &--small {
+        height: 40px;
+        padding: 0 16px;
+    }
 
     + .btn {
         &:not(.btn--no-margin) {
@@ -57,7 +63,6 @@
     }
 
     &--text {
-        color: #9E9DA8;
         background: transparent;
         font-size: 1.5rem;
         font-weight: 400;

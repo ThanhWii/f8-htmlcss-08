@@ -7,7 +7,7 @@ html.dark {
     // Dropdown
     --dropdown-bg-color: #2f3441;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.40);
-    --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(10%) saturate(1172%) hue-rotate(186deg) brightness(96%) contrast(91%);;
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(10%) saturate(1172%) hue-rotate(186deg) brightness(96%) contrast(91%);
 
     --body-bg: #292e39;
     --header-bg-color: #171C28;
@@ -67,6 +67,29 @@ html.dark {
 
     // Text content
     --text-content-hr-bg: #414349;
+
+    // Header
+    --header-act-dropdown-color: #B9BABE;
+    --header-act-dropdown-bg: #292E39;
+    --header-act-dropdown-shadow: rgba(23, 28, 40, 0.40);
+    --header-act-dropdown-border-color: #171c28;
+
+    // Checkout
+    --checkout-breadcrumbs-bg: #171C28;
+    --checkout-cart-info-bg: #171C28;
+    --checkout-cart-info-shadow: rgba(23, 28, 40, 0.20);
+    --checkout-cart-info-separate-bg: #292E39;
+    --checkout-cart-item-title: #B9BABE;
+    --checkout-cart-item-border: #292E39;
+    --checkout-cart-item-price: #9E9DA8;
+    --checkout-cart-item-total-price: #B9BABE;
+    --checkout-cart-item-control-btn: #B9BABE;
+    --checkout-cart-item-control-border: #292E39;
+    --checkout-gift-shadow: #292E39;
+
+    // Dialog
+    --dialog-bg: #2f3441;
+    --dialog-shadow: rgba(23, 28, 40, 0.40);
 
     // Product detail
     @include abstracts.screen(md) {
