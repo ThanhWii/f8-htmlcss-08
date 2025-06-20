@@ -91,6 +91,11 @@ html.dark {
     --dialog-bg: #2f3441;
     --dialog-shadow: rgba(23, 28, 40, 0.40);
 
+    // Form
+    --form-select-dialog-shadow: rgba($color: #fff, $alpha: 0.2);
+    --form-select-dialog-bg: #2f3441;
+    --form-option-hover-bg: #292E39;
+
     // Product detail
     @include abstracts.screen(md) {
         --product-detail-bg: #292E39;
