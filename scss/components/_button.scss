@@ -43,6 +43,7 @@
     justify-content: center;
     gap: 10px;
     height: 46px;
+    min-width: 90px;
     padding: 0 20px;
     font-size: 1.8rem;
     font-weight: 500;
@@ -70,6 +71,11 @@
     &--primary {
         color: #1A162E;
         background: #FFB700;
+    }
+
+    &--danger {
+        background: #ed4337;
+        color: var(--text-content-hr-bg);
     }
 
     &--outline {
