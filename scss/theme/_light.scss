@@ -91,6 +91,15 @@ html {
     --form-select-dialog-bg: #fff;
     --form-option-hover-bg: #ebebeb;
 
+    // Profile
+    --profile-sidebar-bg: #fff;
+    --profile-sidebar-shadow: rgba(237, 237, 246, 0.20);
+    --account-info-bg: #f6f6f6;
+    --account-info-icon-bg: #fff;
+
+    // Separate
+    --separate-color: #d2d1d6;
+
     // Product detail
     @include abstracts.screen(md) {
         --product-detail-bg: #fafafd;
