@@ -40,7 +40,16 @@
         }
     }
 
+    &__back-arrow {
+        position: relative;
+        top: 4px;
+        width: 40px;
+        padding-right: 10px;
+    }
+
     &__heading {
+        display: flex;
+        align-items: center;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 141.667%;

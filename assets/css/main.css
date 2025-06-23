@@ -2034,7 +2034,7 @@ html {
 .dropdown {
   position: absolute;
   left: 0;
-  padding-top: 54px;
+  padding-top: 8px;
   width: min(1240px, 100%);
   display: none;
 }
@@ -3942,7 +3942,15 @@ html {
     gap: 20px;
   }
 }
+.cart-info__back-arrow {
+  position: relative;
+  top: 4px;
+  width: 40px;
+  padding-right: 10px;
+}
 .cart-info__heading {
+  display: flex;
+  align-items: center;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
@@ -4476,6 +4484,23 @@ html {
 }
 .profile__desc {
   margin-bottom: 16px;
+}
+
+.form-card__label {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.form-card__bottom {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.form-card__button {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=main.css.map */
