@@ -1274,7 +1274,7 @@ html.dark {
   --footer-text-color: #9e9da6;
   --top-act-group-bg-color: #292E39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.20);
-  --top-act-group-seperate: #EDEDF6;
+  --top-act-group-seperate: #545458;
   --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(6911%) hue-rotate(8deg) brightness(112%) contrast(97%);
   --sidebar-bg: #292E39;
   --sidebar-shadow: rgba(23, 28, 40, 0.40);
@@ -1459,7 +1459,7 @@ html {
 
 .top-bar {
   position: relative;
-  padding: 30px 0;
+  padding: 16px 0;
   z-index: 1;
 }
 @media (max-width: 991.98px) {
@@ -1673,11 +1673,24 @@ html {
   height: 30px;
   background: var(--top-act-group-seperate);
 }
+.top-act__user {
+  position: relative;
+}
+.top-act__user:hover .act-dropdown {
+  display: block;
+}
 .top-act__avatar {
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 8px;
+}
+.top-act__dropdown {
+  right: -15px !important;
+  width: min(300px, 100vw) !important;
+}
+.top-act__dropdown-arrow {
+  right: 15px !important;
 }
 
 .nav-btn {
@@ -1810,6 +1823,51 @@ html {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.667%;
+}
+
+.user-menu {
+  padding: 20px;
+}
+.user-menu__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.user-menu__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.user-menu__name {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.user-menu__username {
+  text-align: left;
+}
+.user-menu__list {
+  margin-top: 20px;
+}
+.user-menu__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 1.4rem;
+}
+.user-menu__link:hover {
+  color: #0071dc;
+}
+.user-menu__separate {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--separate-color);
+}
+.user-menu__icon {
+  width: 16px;
 }
 
 .footer {
@@ -2288,7 +2346,7 @@ html {
 
 .cate-item {
   height: 100%;
-  padding: 20px 26px 20px 20px;
+  padding: 20px;
   display: flex;
   gap: 20px;
   background: var(--cate-item-bg);
@@ -2306,8 +2364,8 @@ html {
 }
 .cate-item__thumb {
   display: block;
-  width: 116px;
-  height: 116px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   background: var(--cate-item-thumb-bg);
   border-radius: 8px;
@@ -2738,7 +2796,7 @@ html {
 }
 .form__text-input {
   position: relative;
-  height: 50px;
+  height: 48px;
 }
 .form__text-input--small {
   height: 42px;

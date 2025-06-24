@@ -18,7 +18,7 @@
 .top-bar {
     @extend %flexItemsCenter;
     position: relative;
-    padding: 30px 0;
+    padding: 16px 0;
     z-index: 1;
 
     @include abstracts.screen(lg) {
@@ -250,11 +250,28 @@
         background: var(--top-act-group-seperate);
     }
 
+    &__user {
+        position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
     &__avatar {
         display: block;
         width: 50px;
         height: 50px;
         border-radius: 8px;
+    }
+
+    &__dropdown {
+        right: -15px !important;
+        width: min(300px, 100vw) !important;
+    }
+
+    &__dropdown-arrow {
+        right: 15px !important;
     }
 }
 
@@ -406,5 +423,59 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+    }
+}
+
+.user-menu {
+    padding: 20px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    &__username {
+        text-align: left;
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+        text-align: left;
+        font-size: 1.4rem;
+
+        &:hover {
+            color: #0071dc;
+        }
+    }
+
+    &__separate {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid var(--separate-color);
+    }
+
+    &__icon {
+        width: 16px;
     }
 }
